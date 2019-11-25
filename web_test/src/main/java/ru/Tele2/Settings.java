@@ -15,6 +15,8 @@ public class Settings {
 
         @Before
         public void setUp() {
+           
+            //При запуске на ОС Windows для Chrome Driver указать путь src/main/drivers/chromedriver.exe
             System.setProperty("webdriver.chrome.driver", "src/main/drivers/chromedriver");
             driver = new ChromeDriver();
             wait = new WebDriverWait(driver, 15);
